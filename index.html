@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Technical Documentation Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1 id="title">Technical Documentation Page</h1>
+    
+    <main id="main-doc">
+        <nav id="navbar">                    
+            <header>Document Content</header>
+            <hr>
+            <ul>
+                <li><a href="#JS_Data_Types" class="nav-link">JS Data Types</a></li>
+                <li><a href="#JS_Strings" class="nav-link">JS Strings</a></li>
+                <li><a href="#JS_Numbers" class="nav-link">JS Numbers</a></li>
+                <li><a href="#JS_Arrays" class="nav-link">JS Arrays</a></li>
+                <li><a href="#JS_Functions" class="nav-link">JS Functions</a></li>
+                <li><a href="#JS_Objects" class="nav-link">JS Objects</a></li>
+                <li><a href="#JS_Loops" class="nav-link">JS Loops</a></li>
+                <li><a href="#JS_Scope" class="nav-link">JS Scope</a></li>
+                <li><a href="#JS_Hoisting" class="nav-link">JS Hoisting</a></li>
+                <li><a href="#JS_THIS_Keyword" class="nav-link">JS THIS keyword</a></li>
+                <li><a href="#JSON" class="nav-link">JSON</a></li>
+                <li><a href="#Node_JS" class="nav-link">Node JS</a></li>
+            </ul>
+        </nav>
+        <div class="content">
+            <header>Documentation Content</header>
+            <hr>
+
+            <section id="JS_Data_Types" class="main-section">
+                <header>JS Data Types</header>
+                <p>JavaScript variables can hold many data types: numbers, strings, objects and more:</p>
+                <code>var length = 16;  // Number 
+var lastName = "Johnson";   // String
+var x = {firstName:"John", lastName:"Doe"}; // Object</code>
+                <p>JavaScript Types are Dynamic
+                JavaScript has dynamic types. This means that the same variable can be used to hold different data types.</p>
+            </section>
+            <section id="JS_Strings" class="main-section">
+                <header>JS Strings</header>
+                <p>JavaScript strings are used for storing and manipulating text <br> A JavaScript string is zero or more characters written inside quotes.</p>
+
+                <p>String Length - The length of a string is found in the built in property length:</p>
+            </section>
+            <section id="JS_Numbers" class="main-section">
+                <header>JS Numbers</header>
+                <p>JavaScript has only one type of number. Numbers can be written with or without decimals.</p>
+                                
+                <p>JavaScript uses the + operator for both addition and concatenation.<br>
+                Numbers are added. Strings are concatenated.</p>
+
+                <p>NaN is a JavaScript reserved word indicating that a number is not a legal number.</p>
+
+                <p>Normally JavaScript numbers are primitive values created from literals.<br>
+                But numbers can also be defined as objects with the keyword new:</p>
+            </section>
+            <section id="JS_Arrays" class="main-section">
+                <header>JS Arrays</header>
+                <p>JavaScript arrays are used to store multiple values in a single variable.<br>
+                An array is a special variable, which can hold more than one value at a time.</p>
+                                
+                <code>var cars = ["Saab", "Volvo", "BMW"];</code>
+
+                <p>An array can hold many values under a single name, and you can access the values by referring to an index number.</p>
+            </section>
+            <section id="JS_Functions" class="main-section">
+                <header>JS Functions</header>
+                <p>A JavaScript function is a block of code designed to perform a particular task.<br>
+                A JavaScript function is executed when "something" invokes it (calls it).</p>
+                                
+                <p>JavaScript Function Syntax<br>
+                A JavaScript function is defined with the function keyword, followed by a name, followed by parentheses ().</p>
+                <code>function name(parameter1, parameter2, parameter3) {
+    // code to be executed
+}</code>
+                <p>Function parameters are listed inside the parentheses () in the function definition.<br>
+                Function arguments are the values received by the function when it is invoked.<br>
+                Inside the function, the arguments (the parameters) behave as local variables.</p>
+
+                <p>Why Functions?<br>
+                You can reuse code: Define the code once, and use it many times.<br>
+                You can use the same code many times with different arguments, to produce different results.</p>
+            </section>
+            <section id="JS_Objects" class="main-section">
+                <header>JS Objects</header>
+                <p>In real life, a car is an object.<br>
+                A car has properties like weight and color, and methods like start and stop:</p>
+                                
+                <p>All cars have the same properties, but the property values differ from car to car.<br>
+                All cars have the same methods, but the methods are performed at different times.</p>
+                <code>var person = {
+    firstName:"John",
+    lastName:"Doe",
+    age:50,
+    eyeColor:"blue"
+};</code>
+            </section>
+            <section id="JS_Loops" class="main-section">
+                <header>JS Loops</header>
+                <p>Loops can execute a block of code a number of times.<br>
+                Loops are handy, if you want to run the same code over and over again, each time with a different value.</p>
+
+                <code>for (statement 1; statement 2; statement 3) {
+    // code block to be executed
+}</code>
+<br>
+                <code>var i;
+for (i = 0; i < cars.length; i++) { 
+    text += cars[i] + "<br>";
+}</code>
+            </section>
+            
+            <section id="JS_Scope" class="main-section">
+                <header>JS Scope</header>
+                <p>Scope determines the accessibility (visibility) of variables.</p>
+                                
+                <p>JavaScript Function Scope<br>
+                In JavaScript there are two types of scope:</p>
+                <ul>
+                    <li>Local scope</li>
+                    <li>Global scope</li>
+                </ul>
+
+                <p>JavaScript has function scope: Each function creates a new scope.<br>
+                Scope determines the accessibility (visibility) of these variables.<br>
+                Variables defined inside a function are not accessible (visible) from outside the function.</p>
+            </section>
+
+            <section id="JS_Hoisting" class="main-section">
+                <header>JS Hoisting</header>
+                <p>Hoisting is JavaScript's default behavior of moving declarations to the top.<br>
+                JavaScript Declarations are Hoisted<br>
+                In JavaScript, a variable can be declared after it has been used.<br>
+                In other words; a variable can be used before it has been declared.</p>
+                                
+                <p>Hoisting is (to many developers) an unknown or overlooked behavior of JavaScript.<br>
+                If a developer doesn't understand hoisting, programs may contain bugs (errors).<br>
+                To avoid bugs, always declare all variables at the beginning of every scope.</p>
+            </section>
+
+            <section id="JS_THIS_Keyword" class="main-section">
+                <header>JS THIS Keyword</header>
+                <p>The JavaScript this keyword refers to the object it belongs to.<br>
+                This has different values depending on where it is used.</p>
+                <code>In a method, this refers to the owner object.
+Alone, this refers to the global object.
+In a function, this refers to the global object.
+In a function, in strict mode, this is undefined.
+In an event, this refers to the element that
+received the event.
+Methods like call(), and apply() can refer this
+to any object.</code>
+            </section>
+
+            <section id="JSON" class="main-section">
+                <header>JSON</header>
+                <p>JSON: JavaScript Object Notation.<br>
+                JSON is text, written with JavaScript object notation.</p>
+                                
+                <p>What is JSON?</p>
+                       
+                <ul>
+                    <li>JSON stands for JavaScript Object Notation</li>
+                    <li>JSON is a lightweight data-interchange format</li>
+                    <li>JSON is "self-describing" and easy to understand</li>
+                    <li>JSON is language independent *</li>
+                    <li>JSON uses JavaScript syntax, but the JSON format is text only.</li>
+                    <li>Text can be read and used as a data format by any programming language.</li>
+                </ul>
+            </section>
+
+            <section id="Node_JS" class="main-section">
+                <header>Node JS</header>
+                <p>What is Node.js?</p>
+                <ul>
+                    <li>Node.js is an open source server environment</li>
+                    <li>Node.js is free</li>
+                    <li>Node.js runs on various platforms (Windows, Linux, Unix, Mac OS X, etc.)</li>
+                    <li>Node.js uses JavaScript on the server</li>
+                </ul>
+                                
+                <p>A common task for a web server can be to open a file on the server and return the content to the client.</p>
+            </section>
+
+        </div>
+    </main>
+
+</body>
+</html>
